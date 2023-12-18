@@ -1,0 +1,26 @@
+﻿<Window x:Class="Surfario.BookmarkWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Surfario"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Icon="pack://application:,,,/Surfario;component/images/surfario.ico"
+        WindowStartupLocation="CenterScreen"
+        Title="BookmarkWindow" Height="220" Width="300">
+    <Grid>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center"  Margin="20">
+            <TextBlock Margin="0 0 0 20" FontWeight="Bold" FontSize="16">Bookmark</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="40" FontSize="14">Name:</TextBlock>
+                <TextBox x:Name="BookmarkName" FontSize="14" Width="100" Height="25" TextAlignment="Left" Margin="20 0 0 40"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Button Width="70" Height="25" Click="AddBookmark" Background="Blue" Foreground="White">Add</Button>
+                <Button Width="70" Height="25" Margin="20 0 0 0" Click="RemoveBookmark" Background="LightBlue" >Remove</Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
